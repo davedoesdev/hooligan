@@ -313,3 +313,6 @@ h1:first-child, h2:first-child {
 
 pre.prettyprint {
   margin-top: 18px; }
+
+.pagination a, .btn-group > .btn {
+  float: none; }
