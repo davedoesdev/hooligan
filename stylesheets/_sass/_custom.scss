@@ -99,10 +99,11 @@ pre.prettyprint
   display: none;
 }
 
-.zocial.github { color: #fbfbfb; }
-.zocial.twitter { color: #46c0fb; }
-.zocial.linkedin { color: #0083a8; }
-.zocial.rss { color: #ff7f25; }
+.zocial.github:focus,
+.zocial.github:hover
+{
+  color: #46c0fb !important;
+}
 
 .zocial.github,.zocial.twitter,.zocial.linkedin,.zocial.rss
 {
