@@ -322,3 +322,20 @@ pre.prettyprint {
 
 .tag_box_container_empty {
   display: none; }
+
+.zocial.github {
+  color: #fbfbfb; }
+
+.zocial.twitter {
+  color: #46c0fb; }
+
+.zocial.linkedin {
+  color: #0083a8; }
+
+.zocial.rss {
+  color: #ff7f25; }
+
+.zocial.github, .zocial.twitter, .zocial.linkedin, .zocial.rss {
+  background-color: #050505;
+  padding: 0px !important;
+  margin: 4px 5px 4px !important; }
