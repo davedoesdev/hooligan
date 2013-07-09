@@ -42,15 +42,6 @@ layout : default
       <div class="date"><span>{{ page.date }}</span></div>
     </section>
 
-    <section class="tag_box_container{{^ page.categories?to_categories }}_empty{{/ page.categories?to_categories }}" >
-      <h4>Categories</h4>
-      <ul class="tag_box">
-        {{# page.categories?to_categories }}
-          {{> categories_list }}
-        {{/ page.categories?to_categories }}
-      </ul>
-    </section>
-
     <section class="tag_box_container{{^ page.tags?to_tags }}_empty{{/ page.tags?to_tags }}" >
       <h4>Tags</h4>
       <ul class="tag_box">
