@@ -3,7 +3,9 @@
     "layouts/*",
     "stylesheets/_sass/*",
     '*README.md',
-    '*sample.html'
+    'screenshot.png',
+    '*sample.html',
+    'theme.yml'
   ],
   
   "stylesheets" : {
