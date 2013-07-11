@@ -48,8 +48,8 @@ a.btn, a.btn.disabled {
      rgba(255, 255, 255, 0.1) 0 1px 0, 
      rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset
   );
-  background: lighten(#202020, 10%);
-  background-color: lighten(rgba(0, 0, 0, 0.3), 10%);
+  background: lighten(#202020, 5%);
+  background-color: lighten(rgba(0, 0, 0, 0.3), 5%);
   border:none;
   padding: 10px 20px 10px;
   margin: 0px -20px 20px;
@@ -121,3 +121,14 @@ pre.prettyprint
   margin: 4px 5px 4px !important;
 }
 
+$gradtop: darken(#444444, 6%);
+$gradbottom: darken(#222222, 6%);
+
+.navbar-inner {
+  background-color: darken(#363636, 6%);
+  background-image: -moz-linear-gradient(top, $gradtop, $gradbottom);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($gradtop), to($gradbottom));
+  background-image: -webkit-linear-gradient(top, $gradtop, $gradbottom);
+  background-image: -o-linear-gradient(top, $gradtop, $gradbottom);
+  background-image: linear-gradient(to bottom, $gradtop, $gradbottom);
+}

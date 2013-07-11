@@ -281,8 +281,8 @@ a.btn:hover, a.btn.disabled:hover {
   -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
   -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
   box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
-  background: #393939;
-  background-color: rgba(26, 26, 26, 0.3);
+  background: #2d2d2d;
+  background-color: rgba(13, 13, 13, 0.3);
   border: none;
   padding: 10px 20px 10px;
   margin: 0px -20px 20px;
@@ -338,3 +338,11 @@ pre.prettyprint {
   background-color: #050505;
   padding: 0px !important;
   margin: 4px 5px 4px !important; }
+
+.navbar-inner {
+  background-color: #272727;
+  background-image: -moz-linear-gradient(top, #353535, #131313);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#353535), to(#131313));
+  background-image: -webkit-linear-gradient(top, #353535, #131313);
+  background-image: -o-linear-gradient(top, #353535, #131313);
+  background-image: linear-gradient(to bottom, #353535, #131313); }
