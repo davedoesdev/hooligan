@@ -1,7 +1,7 @@
 /* This is for your Custom Content. */
 
 html, body {
-  background: url(../../media/bgs/body.png) repeat ;
+  background: url(../media/bgs/body.png) repeat ;
 }
 
 strong {
@@ -33,10 +33,6 @@ a.btn, a.btn.disabled {
   }
 }
 
-.post {
-  margin-bottom: 20px;
-}
-
 .post > .title::before
 {
   content: "> ";
@@ -52,7 +48,7 @@ a.btn, a.btn.disabled {
      rgba(255, 255, 255, 0.1) 0 1px 0, 
      rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset
   );
-  background: ligthen(#202020, 10%);
+  background: lighten(#202020, 10%);
   background-color: lighten(rgba(0, 0, 0, 0.3), 10%);
   border:none;
   padding: 10px 20px 10px;
@@ -63,6 +59,13 @@ a.btn, a.btn.disabled {
   @include border-bottom-right-radius;
 }
 
+.post:first-child {
+  margin-top: 20px;
+}
+
+.page-header + div .post:first-child {
+  margin-top: 0px;
+}
 
 ul, ol
 {
@@ -79,14 +82,20 @@ h1:first-child, h2:first-child
   margin-top: 0px;
 }
 
+.pagination-centered-wrapper
+{
+  text-align: center;
+}
+
+.pagination-centered-wrapper .pagination-centered
+{
+  display: inline-block;
+  margin: 0px;
+}
+
 pre.prettyprint
 {
   margin-top: 18px;
-}
-
-.pagination a, .btn-group > .btn
-{
-  float: none;
 }
 
 .tag_box_container
@@ -112,23 +121,3 @@ pre.prettyprint
   margin: 4px 5px 4px !important;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
-  background-image: url("/assets/my_hooligan/stylesheets/bootstrap/img/glyphicons-halflings-white.png") !important;
-}
-
-.icon-white,
-.nav-pills > .active > a > [class^="icon-"],
-.nav-pills > .active > a > [class*=" icon-"],
-.nav-list > .active > a > [class^="icon-"],
-.nav-list > .active > a > [class*=" icon-"],
-.navbar-inverse .nav > .active > a > [class^="icon-"],
-.navbar-inverse .nav > .active > a > [class*=" icon-"],
-.dropdown-menu > li > a:hover > [class^="icon-"],
-.dropdown-menu > li > a:hover > [class*=" icon-"],
-.dropdown-menu > .active > a > [class^="icon-"],
-.dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-submenu:hover > a > [class^="icon-"],
-.dropdown-submenu:hover > a > [class*=" icon-"] {
-  background-image: url("/assets/my_hooligan/stylesheets/bootstrap/img/glyphicons-halflings-white.png") !important;
-}

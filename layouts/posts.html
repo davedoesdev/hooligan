@@ -13,27 +13,29 @@ layout : default
 
 <div class="row">
   <div class="span9">
-    {{{ content }}}
+    {{{ page.content }}}
     <hr>
+    <div class="pagination-centered-wrapper">
     <div class="pagination pagination-centered btn-group">
-      {{# page?previous }}
+      {{# page.previous }}
         <a class="btn prev" href="{{ url }}" title="{{ title }}">&larr; Previous</a>
-      {{/ page?previous }}
-      {{^ page?previous }}
+      {{/ page.previous }}
+      {{^ page.previous }}
         <a class="btn disabled prev">&larr; Previous</a>
-      {{/ page?previous }}
+      {{/ page.previous }}
 
         <a class="btn" href="/archive">Archive</a>
 
-      {{# page?next }}
+      {{# page.next }}
         <a class="btn next" href="{{ url }}" title="{{ title }}">Next &rarr;</a>
-      {{/ page?next }}
-      {{^ page?next }}
+      {{/ page.next }}
+      {{^ page.next }}
         <a class="btn next disabled">Next &rarr;</a>
-      {{/ page?next }}
+      {{/ page.next }}
+    </div>
     </div>
     <hr>
-    {{{ comments }}}
+    {{{ widgets.comments }}}
   </div>
   
   <div class="span3">
@@ -42,12 +44,12 @@ layout : default
       <div class="date"><span>{{ page.date }}</span></div>
     </section>
 
-    <section class="tag_box_container{{^ page.tags?to_tags }}_empty{{/ page.tags?to_tags }}" >
+    <section class="tag_box_container{{^ page.tags }}_empty{{/ page.tags }}" >
       <h4>Tags</h4>
       <ul class="tag_box">
-        {{# page.tags?to_tags }}
+        {{# page.tags }}
           {{> tags_list }}
-        {{/ page.tags?to_tags }}
+        {{/ page.tags }}
       </ul>
     </section>
   </div>
