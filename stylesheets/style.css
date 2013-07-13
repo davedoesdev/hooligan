@@ -340,9 +340,15 @@ pre.prettyprint {
   margin: 4px 5px 4px !important; }
 
 .navbar-inner {
-  background-color: #272727;
-  background-image: -moz-linear-gradient(top, #353535, #131313);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#353535), to(#131313));
-  background-image: -webkit-linear-gradient(top, #353535, #131313);
-  background-image: -o-linear-gradient(top, #353535, #131313);
-  background-image: linear-gradient(to bottom, #353535, #131313); }
+  background-color: #1c1c1c;
+  background: url(../media/bgs/navbar.png) repeat; }
+
+.nav-collapse .nav > li > a:hover,
+.nav-collapse .dropdown-menu a:hover {
+  background-color: #131313; }
+
+a {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none; }

@@ -1,7 +1,7 @@
 /* This is for your Custom Content. */
 
 html, body {
-  background: url(../media/bgs/body.png) repeat ;
+  background: url(../media/bgs/body.png) repeat;
 }
 
 strong {
@@ -121,14 +121,16 @@ pre.prettyprint
   margin: 4px 5px 4px !important;
 }
 
-$gradtop: darken(#444444, 6%);
-$gradbottom: darken(#222222, 6%);
-
 .navbar-inner {
-  background-color: darken(#363636, 6%);
-  background-image: -moz-linear-gradient(top, $gradtop, $gradbottom);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($gradtop), to($gradbottom));
-  background-image: -webkit-linear-gradient(top, $gradtop, $gradbottom);
-  background-image: -o-linear-gradient(top, $gradtop, $gradbottom);
-  background-image: linear-gradient(to bottom, $gradtop, $gradbottom);
+  background-color: darken(#363636, 10%);
+  background: url(../media/bgs/navbar.png) repeat;
+}
+
+.nav-collapse .nav > li > a:hover,
+.nav-collapse .dropdown-menu a:hover {
+  background-color: darken(#222222, 6%);
+}
+
+a {
+  @include transition(none);
 }
