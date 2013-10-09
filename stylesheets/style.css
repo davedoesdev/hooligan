@@ -356,3 +356,6 @@ a {
   -moz-transition: none;
   -o-transition: none;
   transition: none; }
+
+pre {
+  font-size: 12px; }
