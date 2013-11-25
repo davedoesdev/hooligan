@@ -262,11 +262,6 @@ strong {
   padding-bottom: 5px; }
 .content ol ol {
   list-style: lower-roman; }
-.content ul ul li:not(:last-child),
-.content ul ol li:not(:last-child),
-.content ol ul li:not(:last-child),
-.content ol ol li:not(:last-child) {
-  padding-bottom: 10px; }
 
 a.btn:hover, a.btn.disabled:hover {
   color: white; }

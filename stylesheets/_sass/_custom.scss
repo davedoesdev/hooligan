@@ -19,12 +19,12 @@ strong {
   ol ol {
     list-style: lower-roman;
   }
-  ul ul li:not(:last-child),
-  ul ol li:not(:last-child),
-  ol ul li:not(:last-child),
-  ol ol li:not(:last-child) {
-    padding-bottom: 10px;
-  }
+  //ul ul li:not(:last-child),
+  //ul ol li:not(:last-child),
+  //ol ul li:not(:last-child),
+  //ol ol li:not(:last-child) {
+  //  padding-bottom: 10px;
+  //}
 }
 
 a.btn, a.btn.disabled {
